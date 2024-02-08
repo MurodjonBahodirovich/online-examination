@@ -6,6 +6,11 @@ import headerLogo from "../../assets/img/favicon.png";
 function Navigation() {
   const NavLinks = [
     {
+      id: 0,
+      linkTo: "/",
+      element: "Bosh Sahifa",
+    },
+    {
       id: 1,
       linkTo: "/test",
       element: "Test",
@@ -17,7 +22,6 @@ function Navigation() {
     },
     {
       id: 3,
-      linkTo: "/profile",
       element: (
         <i
           style={{ fontSize: "2.5rem", color: "#000" }}
@@ -47,7 +51,7 @@ function Navigation() {
             {NavLinks.map((link) => {
               return (
                 <Link
-                  to={link.linkTo}
+                  to={link?.linkTo}
                   key={link.id}
                   style={{
                     color: "#000",
