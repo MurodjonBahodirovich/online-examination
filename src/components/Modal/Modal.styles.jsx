@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const OverlayBox = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: #000000ab;
+  background-color: #000000e0;
   backdrop-filter: blur(2px);
 
   position: fixed;
@@ -14,9 +14,9 @@ export const OverlayBox = styled.div`
 `;
 
 export const ModalBox = styled.div`
-  width: 40rem;
-  height: 70rem;
-  padding: 1rem;
+  /* width: 40rem;
+  height: 70rem; */
+  padding: 2rem;
   background-color: #7777774e;
   border-radius: 5px;
   backdrop-filter: blur(5px);
@@ -34,22 +34,27 @@ export const ModalBox = styled.div`
 export const ModalBtn = styled.button`
   width: 1.5rem;
   height: 1.5rem;
-  background-color: red;
+  background-color: ${({ btn }) => btn.color};
   border-radius: 50%;
-  box-shadow: 0px 0px 5px #fff;
+  box-shadow: 0px 0px 3px #000000;
   border: none;
   outline: none;
   position: relative;
-  display: block;
+  /* display: block; */
   margin-bottom: 3rem;
 
+  &:not(:first-child) {
+    margin-left: 1rem;
+  }
+
   &::after {
-    content: "-";
-    color: #c9c9c9;
-    font-size: 2rem;
-    /* font-weight: bold; */
+    /* content: ${({ btn }) => (btn ? btn.element : "x")}; */
+    content: "x";
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
     opacity: 0;
-    transition: all .1s;
+    transition: all 0.1s;
 
     position: absolute;
     top: 40%;

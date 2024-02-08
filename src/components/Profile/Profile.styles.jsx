@@ -5,7 +5,7 @@ export const UserImgInput = styled.input`
 `;
 
 export const UserImgLabel = styled.label`
-  width: 80%;
+  width: 30rem;
   height: 30rem;
   display: inline-block;
   border-radius: 5px;
