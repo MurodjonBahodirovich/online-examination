@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { HeaderContainer, HeaderName, SubContainer } from "./Navigation.styles";
 import { Link, Outlet } from "react-router-dom";
 import headerLogo from "../../assets/img/favicon.png";
+import Profile from "../Profile/Profile";
 
 function Navigation() {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
   const NavLinks = [
     {
       id: 0,
@@ -53,6 +56,7 @@ function Navigation() {
                 <Link
                   to={link?.linkTo}
                   key={link.id}
+                  onClick={link.id === 3 ? () => setIsOpenModal(true) : null}
                   style={{
                     color: "#000",
                     marginLeft: "2rem",
@@ -69,6 +73,7 @@ function Navigation() {
         </SubContainer>
       </HeaderContainer>
       <Outlet />
+      {isOpenModal && <Profile closeModal={() => setIsOpenModal(false)} />}
     </>
   );
 }
