@@ -5,10 +5,27 @@ import {
   UserImage,
   UserImgInput,
   UserImgLabel,
+  UserInfo,
+  UserInfoElement,
 } from "./Profile.styles";
 
 function Profile({ closeModal }) {
   const [userImage, setUserImage] = useState(null);
+
+  const userInfoNames = [
+    {
+      userInfoName: "ism",
+      userInfo: "Murodjon",
+    },
+    {
+      userInfoName: "Familiya",
+      userInfo: "Halilov",
+    },
+    {
+      userInfoName: "Sinf",
+      userInfo: "11-B",
+    },
+  ];
 
   return (
     <>
@@ -27,6 +44,11 @@ function Profile({ closeModal }) {
           id="userimg"
           accept="image/png, image/jpeg"
         />
+        {userInfoNames.map((userInfo) => (
+          <UserInfoElement key={userInfo.userInfoName}>
+            {userInfo.userInfoName} : <UserInfo>{userInfo.userInfo}</UserInfo>
+          </UserInfoElement>
+        ))}
       </Modal>
     </>
   );

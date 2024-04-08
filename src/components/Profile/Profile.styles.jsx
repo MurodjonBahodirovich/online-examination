@@ -28,3 +28,19 @@ export const UserImage = styled.img`
   width: 100%;
   height: 100%;
 `;
+
+export const UserInfoElement = styled.div`
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  color: #fff;
+  user-select: none;
+`;
+
+export const UserInfo = styled.p`
+  font-size: 3rem;
+  margin-left: 5rem;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+`;

@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const OverlayBox = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: #000000e0;
+  background-color: #000000a2;
   backdrop-filter: blur(2px);
 
   position: fixed;
@@ -34,7 +34,7 @@ export const ModalBox = styled.div`
 export const ModalBtn = styled.button`
   width: 1.5rem;
   height: 1.5rem;
-  background-color: ${({ btn }) => btn.color};
+  background-color: ${({ btn }) => btn?.color};
   border-radius: 50%;
   box-shadow: 0px 0px 3px #000000;
   border: none;
@@ -50,7 +50,8 @@ export const ModalBtn = styled.button`
   &::after {
     /* content: ${({ btn }) => (btn ? btn.element : "x")}; */
     content: "x";
-    color: #000;
+    color: #fff;
+    text-shadow: 0px 0px 5px #000000;
     font-size: 1.2rem;
     font-weight: bold;
     opacity: 0;

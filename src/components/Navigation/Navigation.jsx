@@ -9,25 +9,20 @@ function Navigation() {
 
   const NavLinks = [
     {
-      id: 0,
-      linkTo: "/",
-      element: "Bosh Sahifa",
-    },
-    {
       id: 1,
       linkTo: "/test",
       element: "Test",
     },
     {
       id: 2,
-      linkTo: "/result",
-      element: "Natija",
+      linkTo: "/teacher-section",
+      element: "O'qituvchi",
     },
     {
       id: 3,
       element: (
         <i
-          style={{ fontSize: "2.5rem", color: "#000" }}
+          style={{ fontSize: "2.5rem", color: "#fff" }}
           className="fa-regular fa-circle-user"
         />
       ),
@@ -36,6 +31,25 @@ function Navigation() {
 
   return (
     <>
+      <marquee
+        behavior="alternative"
+        direction="horizontal"
+        style={{
+          fontSize: "1.5rem",
+          color: "#fff",
+          fontFamily: "monospace",
+          fontWeight: "bold",
+          backgroundColor: "#6f0d0d",
+
+          position: "absolute",
+          top: 0,
+          left: 0,
+
+          zIndex: 999,
+        }}
+      >
+        Sayt test rejimida ishlamoqda!
+      </marquee>
       <HeaderContainer>
         <SubContainer>
           <Link
@@ -46,7 +60,7 @@ function Navigation() {
               alignItems: "center",
             }}
           >
-            <img src={headerLogo} alt="header logo" style={{ width: "3rem" }} />
+            <img src={headerLogo} alt="ei logo" style={{ width: "3rem" }} />
             <HeaderName>Elektron Imtihon</HeaderName>
           </Link>
 
@@ -58,7 +72,7 @@ function Navigation() {
                   key={link.id}
                   onClick={link.id === 3 ? () => setIsOpenModal(true) : null}
                   style={{
-                    color: "#000",
+                    color: "#fff",
                     marginLeft: "2rem",
                     fontSize: "2rem",
                     textDecoration: "none",
