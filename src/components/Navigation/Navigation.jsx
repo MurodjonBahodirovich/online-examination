@@ -3,6 +3,7 @@ import { HeaderContainer, HeaderName, SubContainer } from "./Navigation.styles";
 import { Link, Outlet } from "react-router-dom";
 import headerLogo from "../../assets/img/favicon.png";
 import Profile from "../Profile/Profile";
+import Marquee from "../Marquee/Marquee";
 
 function Navigation() {
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -31,25 +32,9 @@ function Navigation() {
 
   return (
     <>
-      <marquee
-        behavior="alternative"
-        direction="horizontal"
-        style={{
-          fontSize: "1.5rem",
-          color: "#fff",
-          fontFamily: "monospace",
-          fontWeight: "bold",
-          backgroundColor: "#6f0d0d",
+      <Marquee
+        text="Sayt test rejimida ishlamoqda!"      />
 
-          position: "absolute",
-          top: 0,
-          left: 0,
-
-          zIndex: 999,
-        }}
-      >
-        Sayt test rejimida ishlamoqda!
-      </marquee>
       <HeaderContainer>
         <SubContainer>
           <Link

@@ -7,7 +7,6 @@ function Home() {
     padding: "1rem 3rem",
     borderRadius: "10px",
     color: "#333",
-    fontFamily: "monospace",
     fontFamily: "Reem Kufi Fun",
     textDecoration: "none",
     backgroundColor: "#f6ff00",
@@ -20,17 +19,6 @@ function Home() {
     <Fragment>
       <Container>
         <HomePageContentParent>
-          {/* <img
-            src={HomeLogo}
-            alt=""
-            style={{
-              width: "75rem",
-              height: "50rem",
-              marginTop: "10rem",
-              marginLeft: "2rem",
-            }}
-          /> */}
-
           <div
             style={{
               flex: 1,
