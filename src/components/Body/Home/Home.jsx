@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Container, HomePageContentParent, HomePageText } from "./Home.styles";
-import HomeLogo from "../../../assets/img/hi-logo.png";
 import { Link } from "react-router-dom";
 
 function Home() {
