@@ -5,9 +5,9 @@ import ClassSelectingContainer from "../../TestsPage/ClassSelectingContainer";
 function Tests() {
   return (
     <Fragment>
-      <TestPageContainer>
-        <ClassSelectingContainer />
-      </TestPageContainer>
+        <TestPageContainer>
+          <ClassSelectingContainer />
+        </TestPageContainer>
     </Fragment>
   );
 }

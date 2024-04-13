@@ -3,19 +3,19 @@ import backgroundImage from "../../../assets/img/background.png";
 
 export const Container = styled.div`
   width: 100%;
-  height: 91vh;
-  margin-top: 6.7rem;
-  margin-left: 50%;
+  height: 100vh;
   padding-bottom: 5rem;
-  transform: translate(-50%);
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: "Dancing Script", monospace;
   display: flex;
   align-items: end;
   justify-content: center;
   background-image: url(${backgroundImage});
   background-size: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 
   &::-webkit-scrollbar {
     display: none;
@@ -31,7 +31,7 @@ export const HomePageText = styled.p`
   text-shadow: 0 0 10px #000;
   text-align: center;
   user-select: none;
-  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #001b51;
 `;
 

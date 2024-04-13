@@ -9,6 +9,7 @@ function ClassSelectingContainer() {
           width: "100%",
           height: "100%",
           display: "flex",
+          alignItems: "center",
           justifyContent: "space-between",
         }}
       >

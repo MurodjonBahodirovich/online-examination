@@ -13,14 +13,17 @@ function Navigation() {
       id: 1,
       linkTo: "/test",
       element: "Test",
+      title: "Testni Boshlash",
     },
     {
       id: 2,
       linkTo: "/teacher-section",
       element: "O'qituvchi",
+      title: "O'qituvchi Bo'limi",
     },
     {
       id: 3,
+      title: "Profil",
       element: (
         <i
           style={{ fontSize: "2.5rem", color: "#fff" }}
@@ -32,13 +35,13 @@ function Navigation() {
 
   return (
     <>
-      <Marquee
-        text="Sayt test rejimida ishlamoqda!"      />
+      <Marquee text="Sayt test rejimida ishlamoqda!" />
 
       <HeaderContainer>
         <SubContainer>
           <Link
             to="/"
+            title="Bosh sahifa"
             style={{
               textDecoration: "none",
               display: "flex",
@@ -53,6 +56,7 @@ function Navigation() {
             {NavLinks.map((link) => {
               return (
                 <Link
+                  title={link?.title}
                   to={link?.linkTo}
                   key={link.id}
                   onClick={link.id === 3 ? () => setIsOpenModal(true) : null}

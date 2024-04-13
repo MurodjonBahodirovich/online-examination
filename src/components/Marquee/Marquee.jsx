@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 // Define the keyframes for the scrolling animation
 const marqueeAnimation = keyframes`
   0% {
-    transform: translateX(625%);
+    transform: translateX(650%);
   }
   100% {
     transform: translateX(-100%);
@@ -16,7 +16,7 @@ const MarqueeContainer = styled.div`
   width: 100%;
   overflow: hidden;
   background-color: #6f0d0d;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
