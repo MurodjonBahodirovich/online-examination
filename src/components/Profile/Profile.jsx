@@ -14,14 +14,17 @@ function Profile({ closeModal }) {
 
   const userInfoNames = [
     {
-      userInfoName: "ism",
+      id: 1,
+      userInfoName: "Ism",
       userInfo: "Murodjon",
     },
     {
+      id: 2,
       userInfoName: "Familiya",
       userInfo: "Halilov",
     },
     {
+      id: 3,
       userInfoName: "Sinf",
       userInfo: "11-B",
     },
@@ -45,9 +48,17 @@ function Profile({ closeModal }) {
           accept="image/png, image/jpeg"
         />
         {userInfoNames.map((userInfo) => (
-          <UserInfoElement key={userInfo.userInfoName}>
-            {userInfo.userInfoName} : <UserInfo>{userInfo.userInfo}</UserInfo>
-          </UserInfoElement>
+          <div
+            key={userInfo.id}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <UserInfoElement>{userInfo.userInfoName}:</UserInfoElement>
+            <UserInfo>{userInfo.userInfo}</UserInfo>
+          </div>
         ))}
       </Modal>
     </>

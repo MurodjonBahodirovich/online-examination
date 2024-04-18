@@ -1,3 +1,624 @@
 {
-  "data": []
+  "1-sinf": [
+    {
+      "subject": "alifbe",
+      "alifbe": []
+    },
+    {
+      "subject": "informatika",
+      "informatika": []
+    },
+    {
+      "subject": "ingliz tili",
+      "ingliz tili": []
+    },
+    {
+      "subject": "matematika",
+      "matematika": []
+    },
+    {
+      "subject": "musiqa",
+      "musiqa": []
+    },
+    {
+      "subject": "o'qish",
+      "o'qish": []
+    },
+    {
+      "subject": "ona tili",
+      "ona tili": []
+    },
+    {
+      "subject": "tabiiy fan (SCIENCE)",
+      "tabiiy fan (SCIENCE)": []
+    },
+    {
+      "subject": "tarbiya",
+      "tarbiya": []
+    },
+    {
+      "subject": "tasviriy san'at",
+      "tasviriy san'at": []
+    },
+    {
+      "subject": "texnologiya",
+      "texnologiya": []
+    },
+    {
+      "subject": "Yozuv",
+      "Yozuv": []
+    }
+  ],
+  "2-sinf": [
+    {
+      "subject": "ingliz tili",
+      "ingliz tili": []
+    },
+    {
+      "subject": "matematika",
+      "matematika": []
+    },
+    {
+      "subject": "musiqa",
+      "musiqa": []
+    },
+    {
+      "subject": "o'qish",
+      "o'qish": []
+    },
+    {
+      "subject": "ona tili",
+      "ona tili": []
+    },
+    {
+      "subject": "rus tili",
+      "rus tili": []
+    },
+    {
+      "subject": "tabiiy fan (SCIENCE)",
+      "tabiiy fan (SCIENCE)": []
+    },
+    {
+      "subject": "tarbiya",
+      "tarbiya": []
+    },
+    {
+      "subject": "tasviriy san'at",
+      "tasviriy san'at": []
+    },
+    {
+      "subject": "texnologiya",
+      "texnologiya": []
+    }
+  ],
+  "3-sinf": [
+    {
+      "subject": "ingliz tili",
+      "ingliz tili": []
+    },
+    {
+      "subject": "matematika",
+      "matematika": []
+    },
+    {
+      "subject": "musiqa",
+      "musiqa": []
+    },
+    {
+      "subject": "o'qish",
+      "o'qish": []
+    },
+    {
+      "subject": "ona tili",
+      "ona tili": []
+    },
+    {
+      "subject": "rus tili",
+      "rus tili": []
+    },
+    {
+      "subject": "tabiiy fan (SCIENCE)",
+      "tabiiy fan (SCIENCE)": []
+    },
+    {
+      "subject": "tarbiya",
+      "tarbiya": []
+    },
+    {
+      "subject": "tasviriy san'at",
+      "tasviriy san'at": []
+    },
+    {
+      "subject": "texnologiya",
+      "texnologiya": []
+    }
+  ],
+  "4-sinf": [
+    {
+      "subject": "ingliz tili",
+      "ingliz tili": []
+    },
+    {
+      "subject": "matematika",
+      "matematika": []
+    },
+    {
+      "subject": "musiqa",
+      "musiqa": []
+    },
+    {
+      "subject": "o'qish",
+      "o'qish": []
+    },
+    {
+      "subject": "ona tili",
+      "ona tili": []
+    },
+    {
+      "subject": "rus tili",
+      "rus tili": []
+    },
+    {
+      "subject": "tabiiy fan (SCIENCE)",
+      "tabiiy fan (SCIENCE)": []
+    },
+    {
+      "subject": "tarbiya",
+      "tarbiya": []
+    },
+    {
+      "subject": "tasviriy san'at",
+      "tasviriy san'at": []
+    },
+    {
+      "subject": "texnologiya",
+      "texnologiya": []
+    }
+  ],
+  "5-sinf": [
+    {
+      "subject": "adabiyot",
+      "adabiyot": []
+    },
+    {
+      "subject": "biologiya",
+      "biologiya": []
+    },
+    {
+      "subject": "geografiya",
+      "geografiya": []
+    },
+    {
+      "subject": "informatika",
+      "informatika": []
+    },
+    {
+      "subject": "ingliz tili",
+      "ingliz tili": []
+    },
+    {
+      "subject": "matematika",
+      "matematika": []
+    },
+    {
+      "subject": "musiqa",
+      "musiqa": []
+    },
+    {
+      "subject": "ona tili",
+      "ona tili": []
+    },
+    {
+      "subject": "rus tili",
+      "rus tili": []
+    },
+    {
+      "subject": "tarix",
+      "tarix": []
+    },
+    {
+      "subject": "tarbiya",
+      "tarbiya": []
+    },
+    {
+      "subject": "tasviriy san'at",
+      "tasviriy san'at": []
+    },
+    {
+      "subject": "texnologiya",
+      "texnologiya": []
+    }
+  ],
+  "6-sinf": [
+    {
+      "subject": "adabiyot",
+      "adabiyot": []
+    },
+    {
+      "subject": "biologiya",
+      "biologiya": []
+    },
+    {
+      "subject": "geografiya",
+      "geografiya": []
+    },
+    {
+      "subject": "informatika",
+      "informatika": []
+    },
+    {
+      "subject": "ingliz tili",
+      "ingliz tili": []
+    },
+    {
+      "subject": "matematika",
+      "matematika": []
+    },
+    {
+      "subject": "musiqa",
+      "musiqa": []
+    },
+    {
+      "subject": "ona tili",
+      "ona tili": []
+    },
+    {
+      "subject": "rus tili",
+      "rus tili": []
+    },
+    {
+      "subject": "tarix",
+      "tarix": []
+    },
+    {
+      "subject": "tabiiy fan (SCIENCE)",
+      "tarix": []
+    },
+    {
+      "subject": "tarbiya",
+      "tarbiya": []
+    },
+    {
+      "subject": "tasviriy san'at",
+      "tasviriy san'at": []
+    },
+    {
+      "subject": "texnologiya",
+      "texnologiya": []
+    }
+  ],
+  "7-sinf": [
+    {
+      "subject": "adabiyot",
+      "adabiyot": []
+    },
+    {
+      "subject": "algebra",
+      "algebra": []
+    },
+    {
+      "subject": "biologiya",
+      "biologiya": []
+    },
+    {
+      "subject": "fizika",
+      "fizika": []
+    },
+    {
+      "subject": "geografiya",
+      "ingliz tili": []
+    },
+    {
+      "subject": "geometriya",
+      "geometriya": []
+    },
+    {
+      "subject": "informatika",
+      "informatika": []
+    },
+    {
+      "subject": "ingliz tili",
+      "ingliz tili": []
+    },
+    {
+      "subject": "jaxon tarixi",
+      "jaxon tarixi": []
+    },
+    {
+      "subject": "kimyo",
+      "kimyo": []
+    },
+    {
+      "subject": "musiqa",
+      "musiqa": []
+    },
+    {
+      "subject": "ona tili",
+      "ona tili": []
+    },
+    {
+      "subject": "o'zbekiston tarixi",
+      "o'zbekiston tarixi": []
+    },
+    {
+      "subject": "rus tili",
+      "rus tili": []
+    },
+    {
+      "subject": "tarbiya",
+      "tarbiya": []
+    },
+    {
+      "subject": "tasviriy san'at",
+      "tasviriy san'at": []
+    },
+    {
+      "subject": "texnologiya",
+      "texnologiya": []
+    }
+  ],
+  "8-sinf": [
+    {
+      "subject": "adabiyot",
+      "adabiyot": []
+    },
+    {
+      "subject": "algebra",
+      "algebra": []
+    },
+    {
+      "subject": "biologiya",
+      "biologiya": []
+    },
+    {
+      "subject": "geografiya",
+      "geografiya": []
+    },
+    {
+      "subject": "chizmachilik",
+      "chizmachilik": []
+    },
+    {
+      "subject": "davlat va huquq asoslari",
+      "davlat va huquq asoslari": []
+    },
+    {
+      "subject": "informatika",
+      "informatika": []
+    },
+    {
+      "subject": "iqtisodiy bilib asoslari",
+      "iqtisodiy bilib asoslari": []
+    },
+    {
+      "subject": "ingliz tili",
+      "ingliz tili": []
+    },
+    {
+      "subject": "kimyo",
+      "kimyo": []
+    },
+    {
+      "subject": "ona tili",
+      "ona tili": []
+    },
+    {
+      "subject": "rus tili",
+      "rus tili": []
+    },
+    {
+      "subject": "jahon tarixi",
+      "jahon tarixi": []
+    },
+    {
+      "subject": "o'zbekiston tarixi",
+      "o'zbekiston tarixi": []
+    },
+    {
+      "subject": "tarbiya",
+      "tarbiya": []
+    },
+    {
+      "subject": "texnologiya",
+      "texnologiya": []
+    }
+  ],
+  "9-sinf": [
+    {
+      "subject": "adabiyot",
+      "adabiyot": []
+    },
+    {
+      "subject": "algebra",
+      "algebra": []
+    },
+    {
+      "subject": "biologiya",
+      "biologiya": []
+    },
+    {
+      "subject": "geografiya",
+      "geografiya": []
+    },
+    {
+      "subject": "geometriya",
+      "geometriya": []
+    },
+    {
+      "subject": "chizmachilik",
+      "chizmachilik": []
+    },
+    {
+      "subject": "davlat va huquq asoslari",
+      "davlat va huquq asoslari": []
+    },
+    {
+      "subject": "informatika",
+      "informatika": []
+    },
+    {
+      "subject": "iqtisodiy bilib asoslari",
+      "iqtisodiy bilib asoslari": []
+    },
+    {
+      "subject": "ingliz tili",
+      "ingliz tili": []
+    },
+    {
+      "subject": "kimyo",
+      "kimyo": []
+    },
+    {
+      "subject": "ona tili",
+      "ona tili": []
+    },
+    {
+      "subject": "rus tili",
+      "rus tili": []
+    },
+    {
+      "subject": "jahon tarixi",
+      "jahon tarixi": []
+    },
+    {
+      "subject": "o'zbekiston tarixi",
+      "o'zbekiston tarixi": []
+    },
+    {
+      "subject": "tarbiya",
+      "tarbiya": []
+    },
+    {
+      "subject": "texnologiya",
+      "texnologiya": []
+    }
+  ],
+  "10-sinf": [
+    {
+      "subject": "adabiyot",
+      "adabiyot": []
+    },
+    {
+      "subject": "algebra",
+      "algebra": []
+    },
+    {
+      "subject": "biologiya",
+      "biologiya": []
+    },
+    {
+      "subject": "ChQBT",
+      "ChQBT": []
+    },
+    {
+      "subject": "geografiya",
+      "geografiya": []
+    },
+    {
+      "subject": "chizmachilik",
+      "chizmachilik": []
+    },
+    {
+      "subject": "davlat va huquq asoslari",
+      "davlat va huquq asoslari": []
+    },
+    {
+      "subject": "informatika",
+      "informatika": []
+    },
+    {
+      "subject": "iqtisodiy bilib asoslari",
+      "iqtisodiy bilib asoslari": []
+    },
+    {
+      "subject": "ingliz tili",
+      "ingliz tili": []
+    },
+    {
+      "subject": "kimyo",
+      "kimyo": []
+    },
+    {
+      "subject": "ona tili",
+      "ona tili": []
+    },
+    {
+      "subject": "rus tili",
+      "rus tili": []
+    },
+    {
+      "subject": "jahon tarixi",
+      "jahon tarixi": []
+    },
+    {
+      "subject": "o'zbekiston tarixi",
+      "o'zbekiston tarixi": []
+    },
+    {
+      "subject": "tarbiya",
+      "tarbiya": []
+    }
+  ],
+  "11-sinf": [
+    {
+      "subject": "ona tili",
+      "ona tili": []
+    },
+    {
+      "subject": "adabiyot",
+      "adabiyot": []
+    },
+    {
+      "subject": "matematika",
+      "matematika": []
+    },
+    {
+      "subject": "tadbirkorlik asoslari",
+      "tadbirkorlik asoslari": []
+    },
+    {
+      "subject": "huquqshunoslik",
+      "huquqshunoslik": []
+    },
+    {
+      "subject": "informatika",
+      "informatika": []
+    },
+    {
+      "subject": "biologiya",
+      "biologiya": []
+    },
+    {
+      "subject": "kimyo",
+      "kimyo": []
+    },
+    {
+      "subject": "ingliz tili",
+      "ingliz tili": []
+    },
+    {
+      "subject": "rus tili",
+      "rus tili": []
+    },
+    {
+      "subject": "tarbiya",
+      "tarbiya": []
+    },
+    {
+      "subject": "o'zbekiston tarixi",
+      "o'zbekiston tarixi": []
+    },
+    {
+      "subject": "jahon tarixi",
+      "jahon tarixi": []
+    },
+    {
+      "subject": "astronomiya",
+      "astronomiya": []
+    },
+    {
+      "subject": "ChQBT",
+      "ChQBT": []
+    }
+  ]
 }

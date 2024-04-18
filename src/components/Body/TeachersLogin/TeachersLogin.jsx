@@ -25,7 +25,12 @@ function TeachersLogin() {
         <LoginBoxLabel>O'qituvchi bo'limiga xush kelibsiz!</LoginBoxLabel>
         <LoginBox>
           {inputInfo.map((info) => (
-            <Input type={info.type} placeholder={info.placeholder} required />
+            <Input
+              type={info.type}
+              placeholder={info.placeholder}
+              required
+              key={info.type}
+            />
           ))}
           <Button>Kirish</Button>
         </LoginBox>

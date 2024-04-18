@@ -10,7 +10,7 @@ export const OverlayBox = styled.div`
   top: 0;
   left: 0;
 
-  z-index: 10;
+  z-index: 1001;
 `;
 
 export const ModalBox = styled.div`
@@ -28,7 +28,7 @@ export const ModalBox = styled.div`
 
   transform: translate(-50%, -50%);
 
-  z-index: 11;
+  z-index: 1002;
 `;
 
 export const ModalBtn = styled.button`

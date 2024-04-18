@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 export const TeachersLoginContainer = styled.div`
   width: 50%;
   height: 70vh;
-  /* background-color: orange; */
   margin-top: 15rem;
   margin-left: 50%;
   transform: translate(-50%);
@@ -27,6 +26,7 @@ export const LoginBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #266bcb2f;
 `;
 
 export const Input = styled.input`
