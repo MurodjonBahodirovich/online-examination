@@ -1,10 +1,11 @@
 import { styled } from "styled-components";
 
 export const TeachersLoginContainer = styled.div`
-  width: 50%;
+  width: 100%;
   height: 70vh;
   margin-top: 15rem;
   margin-left: 50%;
+  padding: 2rem;
   transform: translate(-50%);
   display: flex;
   flex-direction: column;
@@ -12,6 +13,7 @@ export const TeachersLoginContainer = styled.div`
 `;
 
 export const LoginBoxLabel = styled.p`
+  text-align: center;
   font-size: 4rem;
   font-family: "Reem Kufi Fun", monospace;
   font-weight: bold;

@@ -1,8 +1,17 @@
 import React from "react";
-import { LoadingAnimation } from "./Loading.styles";
+import {
+  LoadingAnimation,
+  LoadingContainer,
+  LoadingText,
+} from "./Loading.styles";
 
 function Loading() {
-  return <LoadingAnimation />;
+  return (
+    <LoadingContainer>
+      <LoadingAnimation />
+      <LoadingText>Yuklanmoqda</LoadingText>
+    </LoadingContainer>
+  );
 }
 
 export default Loading;

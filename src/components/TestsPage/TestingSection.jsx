@@ -1,8 +1,14 @@
 import React, { Fragment } from "react";
-import { NoTestingTimeText, SubjectBox } from "./TestPage.styles";
+import { NoTestingTimeText } from "./TestPage.styles";
 import Loading from "../Loading/Loading";
+import Tests from "../TestsSection/Tests";
 
-function TestingSection({ data, classSelected }) {
+function TestingSection({
+  data,
+  classSelected,
+  currentSubject,
+  currentSubjectFunc,
+}) {
   return (
     <Fragment>
       {!classSelected ? (
@@ -10,9 +16,11 @@ function TestingSection({ data, classSelected }) {
           ✅Testni boshlash uchun sinfingizni tanlang⚠️
         </NoTestingTimeText>
       ) : data ? (
-        data?.map((test) => (
-          <SubjectBox key={test.subject}>{test.subject}</SubjectBox>
-        ))
+        <Tests
+          data={data}
+          currentSubject={currentSubject}
+          currentSubjectFunc={currentSubjectFunc}
+        />
       ) : (
         <Loading />
       )}

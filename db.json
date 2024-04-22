@@ -582,7 +582,98 @@
     },
     {
       "subject": "informatika",
-      "informatika": []
+      "informatika": [
+        {
+          "id": 1,
+          "question": "Kompyuterning asosiy qurilmalari to'g'ri keltirilgan qatorni aniqlang",
+          "answers": [
+            "Monitor, Klaviatura",
+            "Monitor, Sichqoncha, Kalonka",
+            "Monitor, Klaviatura, Protsessor",
+            "Monitor, Protsessor, Klaviatura, Sichqoncha"
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Kompyuterning yordamchi qurilmalari to'g'ri keltirilgan qatorni aniqlang",
+          "answers": [
+            "Monitor, Klaviatura",
+            "Quloqchin, Kalonka, Printer",
+            "Sichqoncha, Skaner",
+            "Barcha javoblar to'g'ri"
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Kompyuter operatsion tizimlari to'g'ri keltirilgan qatorni aniqlang",
+          "answers": [
+            "Android, iOS",
+            "Android, Linux, iOS",
+            "iOS, Linux",
+            "Windows, Linux, MacOS"
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Kompyuter nima",
+          "answers": [
+            "Monitor, Klaviatura",
+            "Monitor, Sichqoncha, Kalonka",
+            "Monitor, Klaviatura, Protsessor",
+            "Monitor, Protsessor, Klaviatura, Sichqoncha"
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Kompyuter qanday qurilma",
+          "answers": [
+            "Monitor, Klaviatura",
+            "Monitor, Sichqoncha, Kalonka",
+            "Monitor, Klaviatura, Protsessor",
+            "Monitor, Protsessor, Klaviatura, Sichqoncha"
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Kompyuterning necha xili bor",
+          "answers": ["2 xil", "3 xil", "4 xil", "5 xil"]
+        },
+        {
+          "id": 7,
+          "question": "Kompyuterning firmalari to'g'ri keltirilgan qatorni aniqlang",
+          "answers": [
+            "Samsung, Toshiba, Lenovo",
+            "Windows, Lenovo, Acer",
+            "MacOS, Samsung",
+            "Barcha javoblar to'g'ri"
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Kompyuter necha qismga bo'linadi",
+          "answers": ["10 ga", "70 ga", "11 ga", "14 ga"]
+        },
+        {
+          "id": 9,
+          "question": "Kompyuter qachon kashf qilingan",
+          "answers": [
+            "1970-yillarda",
+            "XX asrning 50-yillarida",
+            "1980-yillarda",
+            "To'g'ri javob ko'rsatilmagan"
+          ]
+        },
+        {
+          "id": 10,
+          "question": "Kompyuterni kim birinchi bo'lib yasagan",
+          "answers": [
+            "Pavel Durov",
+            "Steve Jobs",
+            "Steve Chen",
+            "To'g'ri javob ko'rsatilmagan"
+          ]
+        }
+      ]
     },
     {
       "subject": "biologiya",

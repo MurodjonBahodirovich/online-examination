@@ -24,11 +24,15 @@ export const ClassesContainer = styled.div`
 export const TestsContainer = styled.div`
   width: 77%;
   height: 90%;
-  background-color: #ffffff;
-  backdrop-filter: blur(10px);
+  background-color: #ffffffad;
   border: 2px solid #001b51;
   padding: 1rem;
   border-radius: 10px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   position: relative;
 `;
@@ -81,22 +85,3 @@ export const NoTestingTimeText = styled.p`
   transform: translate(0, -60%);
 `;
 
-export const SubjectBox = styled.div`
-  padding: 1.5rem 3.5rem;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  border-radius: 10px;
-  background: #266bcb2f;
-  border: 2px solid #266bcbaa;
-  font-size: 2.7rem;
-  text-align: center;
-  transition: all 0.3s;
-  text-transform: capitalize;
-  display: inline-block;
-  user-select: none;
-
-  &:hover {
-    cursor: pointer;
-    background: #266bcb7f;
-  }
-`;

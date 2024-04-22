@@ -34,10 +34,17 @@ function ClassSelectingContainer() {
       ? localStorage.getItem("activeColor")
       : "#fff"
   );
+  const [currentSubject, setCurrentSubject] = useState(
+    localStorage.getItem("currentSubject")
+      ? localStorage.getItem("currentSubject")
+      : false
+  );
 
   const helperFunc = (classNum = "") => {
+    setCurrentSubject(false);
     setClassSelected(classNum);
     setIsActiveColor("#001b51");
+    localStorage.removeItem("currentSubject");
     localStorage.setItem("selectedClass", classNum);
     localStorage.setItem("activeColor", "#001b51");
   };
@@ -96,7 +103,12 @@ function ClassSelectingContainer() {
           ))}
         </ClassesContainer>
         <TestsContainer>
-          <TestingSection data={data} classSelected={classSelected} />
+          <TestingSection
+            data={data}
+            classSelected={classSelected}
+            currentSubject={currentSubject}
+            currentSubjectFunc={setCurrentSubject}
+          />
         </TestsContainer>
       </ParentDiv>
     </Fragment>
