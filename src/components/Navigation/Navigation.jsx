@@ -31,7 +31,7 @@ function Navigation() {
             style={{ fontSize: "2.5rem", color: "#fff" }}
             className="fa-regular fa-circle-user"
           />
-        ) && "🧑‍💻",
+        ),
     },
   ];
 

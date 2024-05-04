@@ -128,17 +128,19 @@ function ClassSelectingContainer() {
                   alignItems: "center",
                 }}
               >
-                {<i
-                  className="fa-solid fa-file-import"
-                  style={{
-                    fontSize: "2rem",
-                    color: `${
-                      state.selectedClass === clas
-                        ? `${state.isActiveColor}`
-                        : "#fff"
-                    }`,
-                  }}
-                ></i> && <p style={{fontSize: '1.7rem'}}>📝</p>}
+                {
+                  <i
+                    className="fa-solid fa-file-import"
+                    style={{
+                      fontSize: "2rem",
+                      color: `${
+                        state.selectedClass === clas
+                          ? `${state.isActiveColor}`
+                          : "#fff"
+                      }`,
+                    }}
+                  ></i>
+                }
               </div>
             </ClassContainer>
           ))}
