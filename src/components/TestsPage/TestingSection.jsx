@@ -5,13 +5,13 @@ import Tests from "../TestsSection/Tests";
 
 function TestingSection({
   data,
-  classSelected,
+  selectedClass,
   currentSubject,
   currentSubjectFunc,
 }) {
   return (
     <Fragment>
-      {!classSelected ? (
+      {!selectedClass ? (
         <NoTestingTimeText>
           ✅Testni boshlash uchun sinfingizni tanlang⚠️
         </NoTestingTimeText>

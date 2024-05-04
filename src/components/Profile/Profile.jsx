@@ -10,9 +10,18 @@ import {
 } from "./Profile.styles";
 
 function Profile({ closeModal }) {
-  const [userImage, setUserImage] = useState(null);
+  const [userImage, setUserImage] = useState(
+    localStorage.getItem("userImage")
+      ? JSON.parse(localStorage.getItem("userImage"))
+      : null
+  );
 
-  const userInfoNames = [
+  const uploadUserImage = (img) => {
+    setUserImage(img);
+    localStorage.setItem("userImage", JSON.stringify(img));
+  };
+
+  const userInfos = [
     {
       id: 1,
       userInfoName: "Ism",
@@ -42,12 +51,12 @@ function Profile({ closeModal }) {
         </UserImgLabel>
         <UserImgInput
           type="file"
-          onChange={(e) => setUserImage(e.target.files[0])}
+          onChange={(e) => uploadUserImage(e.target.files[0])}
           name="userimg"
           id="userimg"
           accept="image/png, image/jpeg"
         />
-        {userInfoNames.map((userInfo) => (
+        {userInfos.map((userInfo) => (
           <div
             key={userInfo.id}
             style={{

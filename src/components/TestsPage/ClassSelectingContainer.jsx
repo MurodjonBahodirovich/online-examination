@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect, useReducer } from "react";
 import {
   ClassContainer,
   ClassText,
@@ -7,6 +7,46 @@ import {
   TestsContainer,
 } from "./TestPage.styles";
 import TestingSection from "./TestingSection";
+import { produce } from "immer";
+
+const ACTION_TYPES = {
+  data: "DATA",
+  selectedClass: "SELECTED_CLASS",
+  activeColor: "IS_ACTIVE_COLOR",
+  currentSubject: "CURRENT_SUBJECT",
+};
+
+const classReducer = (state, action) => {
+  switch (action.type) {
+    case ACTION_TYPES.data:
+      state.data = action.payload;
+      break;
+    case ACTION_TYPES.selectedClass:
+      state.selectedClass = action.payload;
+      break;
+    case ACTION_TYPES.activeColor:
+      state.isActiveColor = action.payload;
+      break;
+    case ACTION_TYPES.currentSubject:
+      state.currentSubject = action.payload;
+      break;
+    default:
+      return;
+  }
+};
+
+const INITIAL_VALUE = {
+  data: null,
+  selectedClass: localStorage.getItem("selectedClass")
+    ? localStorage.getItem("selectedClass")
+    : null,
+  isActiveColor: localStorage.getItem("activeColor")
+    ? localStorage.getItem("activeColor")
+    : "#fff",
+  currentSubject: localStorage.getItem("currentSubject")
+    ? localStorage.getItem("currentSubject")
+    : false,
+};
 
 function ClassSelectingContainer() {
   const classNums = [
@@ -23,27 +63,21 @@ function ClassSelectingContainer() {
     "11-sinf",
   ];
 
-  const [data, setData] = useState(null);
-  const [classSelected, setClassSelected] = useState(
-    localStorage.getItem("selectedClass")
-      ? localStorage.getItem("selectedClass")
-      : null
-  );
-  const [isActiveColor, setIsActiveColor] = useState(
-    localStorage.getItem("activeColor")
-      ? localStorage.getItem("activeColor")
-      : "#fff"
-  );
-  const [currentSubject, setCurrentSubject] = useState(
-    localStorage.getItem("currentSubject")
-      ? localStorage.getItem("currentSubject")
-      : false
-  );
+  const [state, dispatch] = useReducer(produce(classReducer), INITIAL_VALUE);
 
-  const helperFunc = (classNum = "") => {
-    setCurrentSubject(false);
-    setClassSelected(classNum);
-    setIsActiveColor("#001b51");
+  const helperFunc = (classNum) => {
+    dispatch({
+      type: ACTION_TYPES.currentSubject,
+      payload: false,
+    });
+    dispatch({
+      type: ACTION_TYPES.selectedClass,
+      payload: classNum,
+    });
+    dispatch({
+      type: ACTION_TYPES.activeColor,
+      payload: "#001b51",
+    });
     localStorage.removeItem("currentSubject");
     localStorage.setItem("selectedClass", classNum);
     localStorage.setItem("activeColor", "#001b51");
@@ -55,13 +89,16 @@ function ClassSelectingContainer() {
         `http://localhost:8000/${
           localStorage.getItem("selectedClass")
             ? localStorage.getItem("selectedClass")
-            : classSelected
+            : state.selectedClass
         }`
       );
       const res = await data.json();
-      setData(res);
+      dispatch({
+        type: ACTION_TYPES.data,
+        payload: res,
+      });
     })();
-  }, [classSelected]);
+  }, [state.selectedClass]);
 
   return (
     <Fragment>
@@ -71,14 +108,14 @@ function ClassSelectingContainer() {
             <ClassContainer
               key={clas}
               onClick={() => helperFunc(clas)}
-              classelected={classSelected}
+              classelected={state.selectedClass}
               clas={clas}
             >
               <div style={{ width: "90%" }}>
                 <ClassText
-                  classelected={classSelected}
+                  classelected={state.selectedClass}
                   clas={clas}
-                  colortext={isActiveColor}
+                  colortext={state.isActiveColor}
                 >
                   ☑️ {clas}
                 </ClassText>
@@ -91,23 +128,27 @@ function ClassSelectingContainer() {
                   alignItems: "center",
                 }}
               >
-                <i
+                {<i
                   className="fa-solid fa-file-import"
                   style={{
                     fontSize: "2rem",
-                    color: `${classSelected === clas ? isActiveColor : "#fff"}`,
+                    color: `${
+                      state.selectedClass === clas
+                        ? `${state.isActiveColor}`
+                        : "#fff"
+                    }`,
                   }}
-                ></i>
+                ></i> && <p style={{fontSize: '1.7rem'}}>📝</p>}
               </div>
             </ClassContainer>
           ))}
         </ClassesContainer>
         <TestsContainer>
           <TestingSection
-            data={data}
-            classSelected={classSelected}
-            currentSubject={currentSubject}
-            currentSubjectFunc={setCurrentSubject}
+            data={state.data}
+            selectedClass={state.selectedClass}
+            currentSubject={state.currentSubject}
+            currentSubjectFunc={dispatch}
           />
         </TestsContainer>
       </ParentDiv>

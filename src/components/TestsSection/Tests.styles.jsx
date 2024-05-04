@@ -25,6 +25,8 @@ export const SubjectBox = styled.div`
 export const TestsMainContainer = styled.div`
   width: 100%;
   height: 100%;
+
+  position: relative;
 `;
 
 export const BackBtn = styled.div`
@@ -41,6 +43,24 @@ export const BackBtn = styled.div`
   cursor: pointer;
 
   position: fixed;
+  z-index: 10;
+`;
+
+export const EndTestingBtn = styled.div`
+  width: 12.7rem;
+  height: 4rem;
+  border-radius: 5px;
+  background: #46c700ac;
+  font-size: 1.8rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+
+  position: fixed;
+  right: 6rem;
   z-index: 10;
 `;
 
@@ -101,9 +121,13 @@ export const AnswerBox = styled.div`
   width: 50%;
   padding: 2rem 5rem;
   border-radius: 10px;
-  background: ${({selectedtest, index}) => selectedtest === index ? "#00ff0449" : "#1c63c628"};
-  border: 1px solid ${({selectedtest, index}) => selectedtest === index ? "#00ac03" : "#03367d"};
-  color: ${({selectedtest, index}) => selectedtest === index ? "#008502" : "#545454"};
+  background: ${({ selectedtest, index }) =>
+    selectedtest === index ? "#00ff0449" : "#1c63c628"};
+  border: 1px solid
+    ${({ selectedtest, index }) =>
+      selectedtest === index ? "#00ac03" : "#03367d"};
+  color: ${({ selectedtest, index }) =>
+    selectedtest === index ? "#008502" : "#545454"};
   font-size: 3rem;
   margin-bottom: 2rem;
   user-select: none;

@@ -7,6 +7,7 @@ import Marquee from "../Marquee/Marquee";
 
 function Navigation() {
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const [dispatch, setDispatch] = useState(null);
 
   const NavLinks = [
     {
@@ -24,12 +25,13 @@ function Navigation() {
     {
       id: 3,
       title: "Profil",
-      element: (
-        <i
-          style={{ fontSize: "2.5rem", color: "#fff" }}
-          className="fa-regular fa-circle-user"
-        />
-      ),
+      element:
+        (
+          <i
+            style={{ fontSize: "2.5rem", color: "#fff" }}
+            className="fa-regular fa-circle-user"
+          />
+        ) && "🧑‍💻",
     },
   ];
 

@@ -31,6 +31,15 @@ export const LoginBox = styled.div`
   background-color: #266bcb2f;
 `;
 
+export const InputBox = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+`;
+
 export const Input = styled.input`
   width: 80%;
   padding: 1rem 2rem;
@@ -38,6 +47,20 @@ export const Input = styled.input`
   outline: none;
   color: blue;
   margin-top: 3rem;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+`;
+
+export const InputLabel = styled.label`
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+
+  transform: translate(-130%);
 `;
 
 export const Button = styled.button`

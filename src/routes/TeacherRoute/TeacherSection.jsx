@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import TeachersLogin from "../../Body/TeachersLogin/TeachersLogin";
+import TeachersLogin from "../../components/Body/TeachersLogin/TeachersLogin";
 
 function TeacherSection() {
   localStorage.clear();

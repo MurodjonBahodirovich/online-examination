@@ -3,7 +3,9 @@ import { Container, HomePageContentParent, HomePageText } from "./Home.styles";
 import { Link } from "react-router-dom";
 
 function Home() {
+
   localStorage.clear();
+
   const btnStyle = {
     padding: "1rem 3rem",
     borderRadius: "10px",

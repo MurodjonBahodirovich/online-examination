@@ -27,6 +27,7 @@ export const UserIcon = styled.i`
 export const UserImage = styled.img`
   width: 100%;
   height: 100%;
+  object-fit: cover;
 `;
 
 export const UserInfoElement = styled.div`

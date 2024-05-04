@@ -84,4 +84,3 @@ export const NoTestingTimeText = styled.p`
 
   transform: translate(0, -60%);
 `;
-
