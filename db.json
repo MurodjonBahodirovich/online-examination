@@ -711,5 +711,32 @@
       "subject": "ChQBT",
       "ChQBT": []
     }
-  ]
+  ],
+
+  "user": {
+    "profile": [
+      {
+        "id": 1,
+        "userInfoName": "Ism",
+        "userInfo": "Murodjon"
+      },
+      {
+        "id": 2,
+        "userInfoName": "Familiya",
+        "userInfo": "Halilov"
+      },
+      {
+        "id": 3,
+        "userInfoName": "Sinf",
+        "userInfo": "11-B"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Murodjon Halilov Bahodirovich",
+        "12012007": "12012007",
+        "912639653": "912639653"
+      }
+    ]
+  }
 }

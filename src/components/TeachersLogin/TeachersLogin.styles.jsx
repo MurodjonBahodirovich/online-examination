@@ -47,8 +47,8 @@ export const Input = styled.input`
   outline: none;
   color: blue;
   margin-top: 3rem;
-  font-size: 1.5rem;
-  letter-spacing: 1.5px;
+  font-size: 1.7rem;
+  letter-spacing: 1.7px;
 `;
 
 export const InputLabel = styled.label`

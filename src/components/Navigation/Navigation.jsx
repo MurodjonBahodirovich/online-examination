@@ -7,7 +7,6 @@ import Marquee from "../Marquee/Marquee";
 
 function Navigation() {
   const [isOpenModal, setIsOpenModal] = useState(false);
-  const [dispatch, setDispatch] = useState(null);
 
   const NavLinks = [
     {

@@ -105,6 +105,7 @@ function Tests({ data, currentSubject, currentSubjectFunc }) {
 
   const helperFunc = () => {
     localStorage.removeItem("answer");
+    localStorage.removeItem("activeTest");
     localStorage.removeItem("questions");
     currentSubjectFunc({
       type: "CURRENT_SUBJECT",

@@ -3,8 +3,12 @@ import { Container, HomePageContentParent, HomePageText } from "./Home.styles";
 import { Link } from "react-router-dom";
 
 function Home() {
-
-  localStorage.clear();
+  localStorage.removeItem("activeTest");
+  localStorage.removeItem("currentSubject");
+  localStorage.removeItem("answer");
+  localStorage.removeItem("questions");
+  localStorage.removeItem("activeColor");
+  localStorage.removeItem("selectedClass");
 
   const btnStyle = {
     padding: "1rem 3rem",

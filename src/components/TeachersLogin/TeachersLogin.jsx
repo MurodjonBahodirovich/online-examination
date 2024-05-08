@@ -43,7 +43,7 @@ const inputsReducer = (state, { type, payload }) => {
   }
 };
 
-function TeachersLogin() {
+function TeachersLogin({ setData }) {
   const [state, dispatch] = useReducer(produce(inputsReducer), INITIAL_VALUE);
 
   const handleChange = (e) => {
@@ -69,6 +69,27 @@ function TeachersLogin() {
       type: ACTION_TYPES.pwdType,
       payload: state.pwdType === "password" ? "text" : "password",
     });
+  };
+
+  const handleSubmit = async () => {
+    if ((state.idValue === "") | (state.pwdValue === "")) {
+      alert(
+        "Form to'liq to'ldirilmaganligi sababli siz bu bo'limga kira olmaysiz. Iltimos shaxsiy ID va Parolingizni kiriting!"
+      );
+    } else {
+      const data = await fetch("http://localhost:8000/user");
+      const { teachers } = await data.json();
+
+      teachers?.map((teacher) => {
+        if ((state.idValue in teacher) & (state.pwdValue in teacher)) {
+          return setData(teacher);
+        } else {
+          return alert(
+            "ID yoki Parolda xatolik bor, iltimos tekshirib qayta urinib ko'ring!"
+          );
+        }
+      });
+    }
   };
 
   const inputInfo = [
@@ -97,20 +118,21 @@ function TeachersLogin() {
                 id={info.id}
                 type={info.type}
                 placeholder={info.placeholder}
+                title={info.placeholder}
                 required
                 key={info.type}
                 onChange={handleChange}
                 value={info.id === "pwdInput" ? state.pwdValue : state.idValue}
               />
               <InputLabel
-                id={info.id}
+                htmlFor={info.id}
                 onClick={() => (info.id === "pwdInput" ? pwdFunc() : null)}
               >
                 {info.icon}
               </InputLabel>
             </InputBox>
           ))}
-          <Button>Kirish</Button>
+          <Button onClick={() => handleSubmit()}>Kirish</Button>
         </LoginBox>
       </TeachersLoginContainer>
     </Fragment>

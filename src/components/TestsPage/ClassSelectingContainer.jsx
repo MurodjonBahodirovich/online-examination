@@ -84,20 +84,21 @@ function ClassSelectingContainer() {
   };
 
   useEffect(() => {
-    (async () => {
-      const data = await fetch(
-        `http://localhost:8000/${
-          localStorage.getItem("selectedClass")
-            ? localStorage.getItem("selectedClass")
-            : state.selectedClass
-        }`
-      );
-      const res = await data.json();
-      dispatch({
-        type: ACTION_TYPES.data,
-        payload: res,
-      });
-    })();
+    state.selectedClass &&
+      (async () => {
+        const data = await fetch(
+          `http://localhost:8000/${
+            localStorage.getItem("selectedClass")
+              ? localStorage.getItem("selectedClass")
+              : state.selectedClass
+          }`
+        );
+        const res = await data.json();
+        dispatch({
+          type: ACTION_TYPES.data,
+          payload: res,
+        });
+      })();
   }, [state.selectedClass]);
 
   return (

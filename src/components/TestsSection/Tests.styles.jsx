@@ -50,7 +50,8 @@ export const EndTestingBtn = styled.div`
   width: 12.7rem;
   height: 4rem;
   border-radius: 5px;
-  background: #46c700ac;
+  background: #00644bac;
+  border: 1px solid #03367d;
   font-size: 1.8rem;
   color: #fff;
   display: flex;
