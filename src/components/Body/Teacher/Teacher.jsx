@@ -4,9 +4,9 @@ import { TeacherSectionContainer, WelcomeText } from "./Teacher.styles";
 const Teacher = ({ data }) => {
   return (
     <Fragment>
-      <TeacherSectionContainerN>
+      <TeacherSectionContainer>
         <WelcomeText>🙋‍♂️ Xayrli Kun, {data.name}</WelcomeText>
-      </TeacherSectionContainerN>
+      </TeacherSectionContainer>
     </Fragment>
   );
 };
